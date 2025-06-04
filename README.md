@@ -19,11 +19,11 @@ Um aplicativo que utiliza a API do GitHub para buscar informações de um perfil
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://https://github.com/marcos-goulart/Git-hub-api
    ```
 2. Navegue até o diretório:
    ```bash
-   cd seu-repositorio
+   cd Git-hub-api
    ```
 3. Instale as dependências:
    ```bash
@@ -41,7 +41,9 @@ Um aplicativo que utiliza a API do GitHub para buscar informações de um perfil
 
 ## 📸 Screenshot
 
-![Preview do projeto](./src/assets/images/example.png)
+![Preview do projeto](./src/assets/images/example01.png)
+![Preview do projeto](./src/assets/images/example02.png)
+![Preview do projeto](./src/assets/images/example03.png)
 
 ## 🚀 Deploy
 
