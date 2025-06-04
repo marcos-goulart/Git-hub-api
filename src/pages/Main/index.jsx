@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from 'react'
 
-import { Container } from "./styles";
+import { MdSearch } from 'react-icons/md'
+
+import { Container, Logo, Title, Form, Input, Button } from './styles';
+
+import githublogo from '../../assets/images/github-logo.svg'
 
 export default function Main() {
+  const [login, setLogin] = useState('')
+
   return (
     <Container>
-      <img
-        src="https://devsamurai-materials.s3.amazonaws.com/templates/avatar-gradient-dark.svg"
-        height="256"
-        alt="Dev Samurai"
-      />
-      <h1>Fala Samurai!</h1>
-      <p>Esse é o template typescript básico da Dev Samurai para React.</p>
+      <Logo src={githublogo} alt="API Github" />
+      <Title>GitHub API </Title>
+      <Form>
+        <Input placeholder="usuário" value={login} onChange={(event) => setLogin(event.target.value)}/>
+        <Button to={`/${login}/repositories`}>
+          <MdSearch size={48} />
+        </Button>
+      </Form>
     </Container>
   );
 }
+
