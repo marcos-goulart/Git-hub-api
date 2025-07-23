@@ -60,6 +60,7 @@ export const theme = {
     dark: '#233240',
     link: '#3498db',
     devSamurai: '#f37272',
+    error: '#af0000ff'
   },
   fonts: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
   fontSize: {

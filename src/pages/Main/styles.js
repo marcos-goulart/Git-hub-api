@@ -33,7 +33,8 @@ export const Input = styled.input`
   width: 100%;
   height: 64px;
   line-height: 64px;
-  border: none;
+  border: ${(props) => (props.hasError ? `2px solid ${props.theme.colors.error}` : 'none')};
+  border-right: none;
   font-size: 24px;
   margin-right: 24px;
   padding: 0 24px;
@@ -52,11 +53,25 @@ export const Button = styled(Link)`
   background: transparent;
   width: 80px;
   height: 64px;
-  border: 3px solid ${(props) => props.theme.colors.text};
-  transition: background 0.3s;
+  border: ${(props) => (props.hasError ? `3px solid ${props.theme.colors.error}` : `3px solid ${props.theme.colors.text}`)};
+  transition: background 0.3s, border 0.5 ease;
 
   &:hover {
     background: ${(props) => props.theme.colors.container};
   }
 `;
+
+export const ErrorMessage = styled.p`
+  position: absolute;
+  color: ${(props) => (props.theme.colors.error)};
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: default;
+  width: 100%;
+  max-width: 583px;
+  opacity: ${(props) => (props.visible? 1 : 0)};
+  transform: ${(props) => (props.visible? "translateY(0)" : "translateY(-5px")};
+  transition: opacity 0.5s ease, transform 0.5s ease;
+`
 

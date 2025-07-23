@@ -34,7 +34,7 @@ export default function RepositoriesPage() {
     };
 
     loadData();
-  }, []);
+  }, [login]);
 
   const onFilterClick = (language) => {
     setCurrentLanguage(language);
