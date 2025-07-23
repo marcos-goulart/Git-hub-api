@@ -21,6 +21,8 @@ export const Sidebar = styled.aside`
   min-width: 20rem;
   max-height: 100vh;
   overflow: hidden;
+  overflow-y: auto;
+
 `;
 
 export const Main = styled.section`
@@ -29,6 +31,8 @@ export const Main = styled.section`
   height: 100vh;
   padding: 40px;
   overflow: hidden;
+  overflow-y: auto;
+
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     height: 100%;

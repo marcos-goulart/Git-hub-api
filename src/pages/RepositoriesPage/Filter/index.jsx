@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Container, Selector, Cleaner } from "./styles";
+import { useNavigate } from "react-router";
+import { Container, Selector, Cleaner, BackButton } from "./styles";
 
 export default function Filter({ languages, currentLanguage, onClick }) {
   const selectors = languages.map(({ name, count, color }) => (
@@ -16,10 +17,13 @@ export default function Filter({ languages, currentLanguage, onClick }) {
     </Selector>
   ));
 
+  const navigate = useNavigate()
+
   return (
     <Container>
       {selectors}
       <Cleaner onClick={() => onClick && onClick(undefined)}>Limpar</Cleaner>
+      <BackButton onClick={() => navigate(`/`)}>voltar</BackButton>
     </Container>
   );
 }

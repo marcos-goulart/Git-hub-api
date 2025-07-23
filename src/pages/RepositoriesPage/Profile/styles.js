@@ -7,7 +7,7 @@ export const Container = styled.div`
 export const Header = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem 0
+  padding: 1rem 0;
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     flex-direction: row;
@@ -56,6 +56,6 @@ export const Data = styled.p`
   line-height: 1.5;
 
   svg {
-    margin-rright: 10px
+    margin-right: 10px
   }
 `;

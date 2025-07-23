@@ -49,7 +49,8 @@ export const Cleaner = styled.button`
   color: ${(props) => props.theme.colors.text};
   border: none;
   text-align: left;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 
   &:hover {
     color: rgba(255, 255, 255, 0.5);
@@ -57,7 +58,24 @@ export const Cleaner = styled.button`
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+  }
+`;
+
+export const BackButton = styled.button`
+  background: transparent;
+  color: ${(props) => props.theme.colors.text};
+  border: none;
+  text-align: left;
+  padding: 0.5rem;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    text-align: center;
+    padding: 0 0.5rem;
   }
 `;
 

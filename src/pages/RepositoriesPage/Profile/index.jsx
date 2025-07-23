@@ -10,7 +10,7 @@ export default function Profile({ user }) {
     <Container>
       <Header>
         <Avatar src={user.avatar_url} />
-        <Login>{user.login}</Login>
+        <Login><a href={`https://github.com/${user.login}`}>{user.login}</a></Login>
         <Name>{user.name}</Name>
       </Header>
       <Inner>
