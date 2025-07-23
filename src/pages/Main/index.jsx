@@ -14,7 +14,7 @@ export default function Main() {
       <Logo src={githublogo} alt="API Github" />
       <Title>GitHub API </Title>
       <Form>
-        <Input placeholder="usuário" value={login} onChange={(event) => setLogin(event.target.value)}/>
+        <Input placeholder="usuário" value={login} onChange={(event) => setLogin(event.target.value)} />
         <Button to={`/${login}/repositories`}>
           <MdSearch size={48} />
         </Button>

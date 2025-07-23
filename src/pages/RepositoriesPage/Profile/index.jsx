@@ -16,25 +16,34 @@ export default function Profile({ user }) {
       <Inner>
         <Data>
           <MdGroup size={20} />
-          &nbsp;{user.followers}&nbsp;<i>seguidores</i>&nbsp;{user.following}
-          &nbsp;<i>seguindo</i>
+          &nbsp;
+          {user.followers}
+&nbsp;
+          <i>seguidores</i>
+&nbsp;
+          {user.following}
+          &nbsp;
+          <i>seguindo</i>
         </Data>
         {user.company && (
           <Data>
             <MdWork size={20} />
-            &nbsp;{user.company}
+            &nbsp;
+            {user.company}
           </Data>
         )}
         {user.location && (
           <Data>
             <MdLocationCity size={20} />
-            &nbsp;{user.location}
+            &nbsp;
+            {user.location}
           </Data>
         )}
         {user.blog && (
           <Data>
             <MdLink size={20} />
-            &nbsp;<a href={`\\${user.blog}`}>{user.blog}</a>
+            &nbsp;
+            <a href={`\\${user.blog}`}>{user.blog}</a>
           </Data>
         )}
       </Inner>

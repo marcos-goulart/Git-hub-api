@@ -14,7 +14,13 @@ export default function Repositories({ repositories, currentLanguage }) {
     .map((repository) => (
       <Repository key={repository.id} repository={repository} />
     ));
-  return <Container> {repos} </Container>;
+  return (
+    <Container>
+      {' '}
+      {repos}
+      {' '}
+    </Container>
+  );
 }
 
 Repositories.defaultProps = {
