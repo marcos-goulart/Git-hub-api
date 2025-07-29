@@ -38,12 +38,12 @@ export default function Main() {
             onKeyUp={(e) => {
               if (e.key === "Enter") handleSearch(e);
             }}
-            hasError={!!error}
+            haserror={!!error}
           />
           <ErrorMessage visible={!!error}>{error}</ErrorMessage>
         </div>
 
-        <Button type="button" onClick={handleSearch} hasError={!!error}>
+        <Button type="button" onClick={handleSearch} haserror={!!error}>
           <MdSearch
             size={48}
             color={error ? theme.colors.error : theme.colors.text}

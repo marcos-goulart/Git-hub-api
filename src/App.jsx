@@ -8,9 +8,11 @@ import { AppRoutes } from "./routes";
 import { GlobalStyle } from "./styles/global";
 import { Theme } from "./styles/Theme";
 
+const basename = process.env.NODE_ENV === "production" ? "/Git-hub-api" : "/"
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Theme>
         <AppRoutes />
         <GlobalStyle />
