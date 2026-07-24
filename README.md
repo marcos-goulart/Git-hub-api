@@ -47,5 +47,5 @@ Um aplicativo que utiliza a API do GitHub para buscar informações de um perfil
 
 ## 🚀 Deploy
 
-Caso o projeto esteja hospedado, adicione o link aqui.
+[Github Pages.](https://marcos-goulart.github.io/Git-hub-api/)
 
